@@ -1,6 +1,6 @@
 @echo off
-REM Compiles GameData\KSPFixConstructionPhysicsless\KSPFixConstructionPhysicsless.dll. Installing is up to you: copy the
-REM GameData\KSPFixConstructionPhysicsless folder into the GameData of KSP.
+REM Compiles GameData\KSPFixConstructionWarpFall\KSPFixConstructionWarpFall.dll. Installing is up to you: copy the
+REM GameData\KSPFixConstructionWarpFall folder into the GameData of KSP.
 setlocal
 cd /d "%~dp0"
 
@@ -9,5 +9,5 @@ if not defined KSPDIR (
     exit /b 1
 )
 
-dotnet build KSPFixConstructionPhysicsless.csproj -c Release -p:KSPDIR="%KSPDIR%"
+dotnet build KSPFixConstructionWarpFall.csproj -c Release -p:KSPDIR="%KSPDIR%"
 exit /b %errorlevel%

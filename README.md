@@ -1,4 +1,4 @@
-# Construction Physicsless Fix
+# Construction Warp Fall Fix
 
 **⚠️ Not finished yet.** This is a new fix, not a finished mod. The code and the conclusions on this page can still change.
 
@@ -73,7 +73,7 @@ their own vessel, until the game is reloaded: the next warp drops them, with not
 ## Checking the culprit
 
 KSP 1.12.5 with [KSP Community Fixes](https://github.com/KSPModdingLibs/KSPCommunityFixes) 1.41.1. Copy
-[construction-physicsless.sfs](diag/construction-physicsless.sfs) into the folder of a sandbox game and load it: Bill,
+[construction-warp-fall.sfs](diag/construction-warp-fall.sfs) into the folder of a sandbox game and load it: Bill,
 an engineer, is on EVA north of the runway, between two rovers. Each rover carries six Z-400 batteries under its frame
 and six OX-STAT solar panels, all of them physicsless parts, and a ladder to climb aboard. Jebediah is aboard one of
 them.
@@ -148,12 +148,12 @@ it by hand, with the mod and without:
 
 ## Install
 
-Copy the `GameData\KSPFixConstructionPhysicsless` folder into the `GameData` folder of KSP. It needs
+Copy the `GameData\KSPFixConstructionWarpFall` folder into the `GameData` folder of KSP. It needs
 [Harmony](https://github.com/KSPModdingLibs/HarmonyKSP), as KSP Community Fixes does.
 
 ## Settings
 
-`GameData\KSPFixConstructionPhysicsless\PluginData\settings.cfg` is read once, when KSP starts:
+`GameData\KSPFixConstructionWarpFall\PluginData\settings.cfg` is read once, when KSP starts:
 
 ```
 // Keeps the physicsless parts of a vessel in place when it comes off rails while a part is held.
@@ -175,7 +175,7 @@ logLevel = Info
 ## Build
 
 Set `KSPDIR` to the folder of a KSP install with Harmony in its `GameData`, then run `build.bat`: it
-compiles `GameData\KSPFixConstructionPhysicsless\KSPFixConstructionPhysicsless.dll`. Installing is up to you.
+compiles `GameData\KSPFixConstructionWarpFall\KSPFixConstructionWarpFall.dll`. Installing is up to you.
 
 ## License
 

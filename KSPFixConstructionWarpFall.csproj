@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyName>KSPFixConstructionPhysicsless</AssemblyName>
-    <RootNamespace>com.github.lhervier.ksp.fix.constructionphysicsless</RootNamespace>
+    <AssemblyName>KSPFixConstructionWarpFall</AssemblyName>
+    <RootNamespace>com.github.lhervier.ksp.fix.constructionwarpfall</RootNamespace>
     <Version>0.1.0</Version>
     <Description>Keeps the physicsless parts of a vessel in place when it comes off rails while a part is held in EVA construction mode</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
-    <OutputPath>GameData\KSPFixConstructionPhysicsless</OutputPath>
+    <OutputPath>GameData\KSPFixConstructionWarpFall</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>none</DebugType>
   </PropertyGroup>

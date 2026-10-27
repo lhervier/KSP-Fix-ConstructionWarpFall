@@ -4,7 +4,7 @@ using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.fix.constructionphysicsless
+namespace com.github.lhervier.ksp.fix.constructionwarpfall
 {
     /// <summary>
     /// Keeps the physicsless parts in place when a vessel comes off rails while a part is held in EVA construction

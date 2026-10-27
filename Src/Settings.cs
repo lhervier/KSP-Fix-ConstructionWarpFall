@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace com.github.lhervier.ksp.fix.constructionphysicsless
+namespace com.github.lhervier.ksp.fix.constructionwarpfall
 {
     /// <summary>
     /// What the player can set in PluginData/settings.cfg, next to the DLL. Read once, when KSP starts.
