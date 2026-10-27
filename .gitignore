@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixConstructionPhysicsless/*.dll
+GameData/*.zip
+__pycache__/
