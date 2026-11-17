@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ namespace com.github.lhervier.ksp.fix.constructionwarpfall
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixConstructionWarpFall).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixConstructionWarpFall).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"physicslessPartsStayStill {Settings.PhysicslessPartsStayStill}, " +
                 $"orphanRigidbodiesRemoved {Settings.OrphanRigidbodiesRemoved}, log level {Log.Level}");
             if (!Settings.PhysicslessPartsStayStill)
